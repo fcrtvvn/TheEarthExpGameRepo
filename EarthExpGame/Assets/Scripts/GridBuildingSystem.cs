@@ -144,10 +144,17 @@ public class GridBuildingSystem : MonoBehaviour
         prevArea = buildingArea;
     }
 
-    //public bool CanTakeArea(BoundsInt area)
-    //{
-    //    TileBase[]
-    //}
+    public bool CanTakeArea(BoundsInt area)
+    {
+        TileBase[] baseArray = GetTilesBlock(area, MainTilemap);
+        foreach (var b in baseArray)
+        {
+            if (b != tileBases[TileType.White])
+            {
+                
+            }
+        }
+    }
 
     #endregion
 
