@@ -12,6 +12,8 @@ public class GridBuildingSystem : MonoBehaviour
     public Tilemap MainTilemap;
     public Tilemap TempTilemap;
 
+    private Vector2 touchPosition;
+
     public static Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
 
     public Building temp;
@@ -61,6 +63,18 @@ public class GridBuildingSystem : MonoBehaviour
                     FollowBuilding();
                 }
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (temp.CanBePlaced())
+            {
+                temp.Place();
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ClearArea();
+            Destroy(temp.gameObject);
         }
     }
 
