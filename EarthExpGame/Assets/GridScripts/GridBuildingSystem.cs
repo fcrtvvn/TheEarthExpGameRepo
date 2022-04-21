@@ -12,7 +12,13 @@ public class GridBuildingSystem : MonoBehaviour
     public Tilemap MainTilemap;
     public Tilemap TempTilemap;
 
-    private static Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
+    //private Vector2 touchPosition;
+
+    public static Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
+
+    public Building temp;
+    private Vector3 prevPos;
+    private BoundsInt prevArea;
 
     #region Unity Methods
 
@@ -21,17 +27,60 @@ public class GridBuildingSystem : MonoBehaviour
         current = this;
     }
 
-    private void Start()
+    void Start()
     {
         string tilePath = @"Tiles\";
         tileBases.Add(TileType.Empty, null);
-        tileBases.Add(TileType.White, Resources.Load<TileBase>(tilePath + "White Tile"));
-        tileBases.Add(TileType.Green, Resources.Load<TileBase>(tilePath + "Green tile"));
-        tileBases.Add(TileType.Red, Resources.Load<TileBase>(tilePath + "Red Tile"));
+        tileBases.Add(TileType.White, Resources.Load<TileBase>(tilePath + "white"));
+        tileBases.Add(TileType.Green, Resources.Load<TileBase>(tilePath + "green"));
+        tileBases.Add(TileType.Red, Resources.Load<TileBase>(tilePath + "red"));
     }
 
     private void Update()
     {
+        //for (int i = 0; i < Input.touchCount; ++i)
+        //{
+        //    if (!temp)
+        //    {
+        //        return;
+        //    }
+
+        //    if (Input.GetMouseButtonDown(0))
+        //    {
+        //        if (EventSystem.current.IsPointerOverGameObject(0))
+        //        {
+        //            return;
+        //        }
+
+        //        if (!temp.Placed)
+        //        {
+        //            Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //            Vector3Int cellPos = gridLayout.LocalToCell(touchPos);
+
+        //            if (prevPos != cellPos)
+        //            {
+        //                temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
+        //                    + new Vector3(.5f, .5f, 0f));
+        //                prevPos = cellPos;
+        //                FollowBuilding();
+        //            }
+        //        }
+        //    }
+
+        //    else if (Input.GetTouch(i).phase == TouchPhase.Began)
+        //    {
+        //        if (temp.CanBePlaced())
+        //        {
+        //            temp.Place();
+        //        }
+        //    }
+
+        //    else if (Input.GetTouch(i).phase == TouchPhase.Ended)
+        //    {
+        //        ClearArea();
+        //        Destroy(temp.gameObject);
+        //    }
+        //}
 
     }
 
@@ -50,7 +99,6 @@ public class GridBuildingSystem : MonoBehaviour
             array[counter] = tilemap.GetTile(pos);
             counter++;
         }
-
         return array;
     }
 
@@ -62,21 +110,88 @@ public class GridBuildingSystem : MonoBehaviour
         tilemap.SetTilesBlock(area, tileArray);
     }
 
-    private static void 
+    private static void FillTiles(TileBase[] arr, TileType type)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = tileBases[type];
+        }
+    }
 
     #endregion
 
     #region Building Placement
 
+    public void InitializeWithBuilding(GameObject building)
+    {
+        temp = Instantiate(building, Vector3.zero, Quaternion.identity).GetComponent<Building>();
+        //FollowBuilding();
+    }
+
+    //private void ClearArea()
+    //{
+    //    TileBase[] toClear = new TileBase[prevArea.size.x * prevArea.size.y * prevArea.size.z];
+    //    FillTiles(toClear, TileType.Empty);
+    //    TempTilemap.SetTilesBlock(prevArea, toClear);
+    //}
+
+    //private void FollowBuilding()
+    //{
+    //    ClearArea();
+
+    //    temp.area.position = gridLayout.WorldToCell(temp.gameObject.transform.position);
+    //    BoundsInt buildingArea = temp.area;
+
+    //    TileBase[] baseArray = GetTilesBlock(buildingArea, MainTilemap);
+
+    //    int size = baseArray.Length;
+    //    TileBase[] tileArray = new TileBase[size];
+
+    //    for (int i = 0; i < baseArray.Length; i++)
+    //    {
+    //        if (baseArray[i] == tileBases[TileType.White])
+    //        {
+    //            tileArray[i] = tileBases[TileType.Green];
+    //        }
+    //        else
+    //        {
+    //            FillTiles(tileArray, TileType.Red);
+    //            break;
+    //        }
+    //    }
+
+    //    TempTilemap.SetTilesBlock(buildingArea, tileArray);
+    //    prevArea = buildingArea;
+    //}
+
+    //public bool CanTakeArea(BoundsInt area)
+    //{
+    //    TileBase[] baseArray = GetTilesBlock(area, MainTilemap);
+    //    foreach (var b in baseArray)
+    //    {
+    //        if (b != tileBases[TileType.White])
+    //        {
+    //            Debug.Log("Cannot place here");
+    //            return false;
+    //        }
+    //    }
+    //    return true;
+    //}
+
+    //public void TakeArea(BoundsInt area)
+    //{
+    //    SetTilesBlock(area, TileType.Empty, TempTilemap);
+    //    SetTilesBlock(area, TileType.Green, MainTilemap);
+    //}
+
     #endregion
-}
 
-public enum TileType
-{
-    Empty,
-    White,
-    Green,
-    Red
-}
+    public enum TileType
+    {
+        Empty,
+        White,
+        Green,
+        Red
+    }
 
-    
+}
