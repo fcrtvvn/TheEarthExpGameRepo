@@ -67,7 +67,6 @@ public class GridBuildingSystem : MonoBehaviour
                 }
             }
 
-        
             else if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
                 if (temp.CanBePlaced())
@@ -75,31 +74,13 @@ public class GridBuildingSystem : MonoBehaviour
                     temp.Place();
                 }
             }
+
+            else if (Input.GetTouch(i).phase == TouchPhase.Ended)
+            {
+                ClearArea();
+                Destroy(temp.gameObject);
+            }
         }
-
-        //if (Input.touchCount > 0)
-        //{
-        //    Touch touch = Input.GetTouch(0);
-
-        //    //else if (touch.phase == TouchPhase.Moved)
-        //    //{
-        //        //touch = Input.GetTouch(1);
-
-        //        //else if (touch.phase == TouchPhase.Began)
-        //        //{
-        //            if (temp.CanBePlaced())
-        //            {
-        //                temp.Place();
-        //            }
-        //    //}
-
-        //        //else if (touch.phase == TouchPhase.Ended)
-        //        //{
-        //            ClearArea();
-        //            Destroy(temp.gameObject);
-        //        //}
-        //    //}
-        //}
 
         //else if (Input.GetKeyDown(KeyCode.Space))
         //{

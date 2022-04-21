@@ -5,7 +5,7 @@ using UnityEngine.Advertisements;
 
 //IUnityAdsListener
 
-public class AdManager : MonoBehaviour, 
+public class AdManager : MonoBehaviour, IUnityAdsListener
 {
     void Start()
     {
