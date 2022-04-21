@@ -4327,3 +4327,50 @@ Total: 5.686165 ms (FindLiveObjects: 0.273502 ms CreateObjectMapping: 0.081236 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 4199.588017 seconds.
+  path: Assets/GridScripts/Building.cs
+  artifactKey: Guid(ca5071b27fe6b4650a14ee50880c866f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GridScripts/Building.cs using Guid(ca5071b27fe6b4650a14ee50880c866f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a1e9f4b821d019c7ff3b64cc58dbbb') in 0.476853 seconds
+  Import took 0.815273 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003841 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.140 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1608 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 267.7 MB.
+System memory in use after: 267.8 MB.
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2242.
+Total: 7.603512 ms (FindLiveObjects: 0.339712 ms CreateObjectMapping: 0.071294 ms MarkObjects: 7.093889 ms  DeleteObjects: 0.096160 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 69.240368 seconds.
+  path: Assets/Scripts/BuildingManager.cs
+  artifactKey: Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BuildingManager.cs using Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18da9a05148edd8abd7e08108e66d5a7') in 0.019598 seconds
+  Import took 0.029904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.085879 seconds.
+  path: Assets/Scripts/BuildingManager.cs
+  artifactKey: Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BuildingManager.cs using Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18da9a05148edd8abd7e08108e66d5a7') in 0.016213 seconds
+  Import took 0.023816 seconds .
+
