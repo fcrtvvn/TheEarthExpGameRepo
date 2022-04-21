@@ -151,9 +151,17 @@ public class GridBuildingSystem : MonoBehaviour
         {
             if (b != tileBases[TileType.White])
             {
-                
+                Debug.Log("Cannot place here");
+                return false;
             }
         }
+        return true;
+    }
+
+    public void TakeArea(BoundsInt area)
+    {
+        SetTilesBlock(area, TileType.Empty, TempTilemap);
+        SetTilesBlock(area, TileType.Green, MainTilemap);
     }
 
     #endregion
