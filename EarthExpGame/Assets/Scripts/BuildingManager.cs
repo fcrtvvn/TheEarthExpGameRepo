@@ -26,6 +26,8 @@ public class BuildingManager : MonoBehaviour
         {
             pendingObject.transform.position = pos;
 
+
+
             if (Input.touchCount > 0 && canPlace)
             {
                 Touch touch = Input.GetTouch(0);
@@ -35,10 +37,13 @@ public class BuildingManager : MonoBehaviour
                         PlaceObject();
                         break;
                     case TouchPhase.Moved:
-
+                        RotateObject();
                         break;
                     case TouchPhase.Ended:
 
+                        break;
+                    case TouchPhase.Stationary:
+                        Destroy(gameObject);
                         break;
                 }
             }
@@ -82,8 +87,8 @@ public class BuildingManager : MonoBehaviour
         return pos;
     }
 
-    private void OnMouseDown()
-    {
-        Destroy(gameObject);
-    }
+    //private void OnMouseDown()
+    //{
+    //    Destroy(gameObject);
+    //}
 }
