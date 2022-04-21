@@ -38,44 +38,81 @@ public class GridBuildingSystem : MonoBehaviour
 
     private void Update()
     {
-        if (!temp)
+        for (int i = 0; i < Input.touchCount; ++i)
         {
-            return;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (EventSystem.current.IsPointerOverGameObject(0))
+                if (!temp)
             {
                 return;
             }
 
-            if (!temp.Placed)
+            if (Input.GetMouseButtonDown(0))
             {
-                Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3Int cellPos = gridLayout.LocalToCell(touchPos);
-
-                if (prevPos != cellPos)
+                if (EventSystem.current.IsPointerOverGameObject(0))
                 {
-                    temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
-                        + new Vector3(.5f, .5f, 0f));
-                    prevPos = cellPos;
-                    FollowBuilding();
+                    return;
+                }
+
+                if (!temp.Placed)
+                {
+                    Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3Int cellPos = gridLayout.LocalToCell(touchPos);
+
+                    if (prevPos != cellPos)
+                    {
+                        temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
+                            + new Vector3(.5f, .5f, 0f));
+                        prevPos = cellPos;
+                        FollowBuilding();
+                    }
+                }
+            }
+
+        
+            else if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                if (temp.CanBePlaced())
+                {
+                    temp.Place();
                 }
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (temp.CanBePlaced())
-            {
-                temp.Place();
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ClearArea();
-            Destroy(temp.gameObject);
-        }
+
+        //if (Input.touchCount > 0)
+        //{
+        //    Touch touch = Input.GetTouch(0);
+
+        //    //else if (touch.phase == TouchPhase.Moved)
+        //    //{
+        //        //touch = Input.GetTouch(1);
+
+        //        //else if (touch.phase == TouchPhase.Began)
+        //        //{
+        //            if (temp.CanBePlaced())
+        //            {
+        //                temp.Place();
+        //            }
+        //    //}
+
+        //        //else if (touch.phase == TouchPhase.Ended)
+        //        //{
+        //            ClearArea();
+        //            Destroy(temp.gameObject);
+        //        //}
+        //    //}
+        //}
+
+        //else if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    if (temp.CanBePlaced())
+        //    {
+        //        temp.Place();
+        //    }
+        //}
+        //else if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    ClearArea();
+        //    Destroy(temp.gameObject);
+        //}
     }
 
     #endregion

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class AdManager : MonoBehaviour, IUnityAdsListener
+//IUnityAdsListener
+
+public class AdManager : MonoBehaviour, 
 {
     void Start()
     {
