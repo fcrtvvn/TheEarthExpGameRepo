@@ -22,7 +22,7 @@ public class BuildingManager : MonoBehaviour
     void Update()
     {
 
-        if (pendingObject != null)
+        if (pendingObject != null && canPlace)
         {
             pendingObject.transform.position = pos;
 

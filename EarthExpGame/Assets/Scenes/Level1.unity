@@ -9477,7 +9477,7 @@ GameObject:
   - component: {fileID: 978805965}
   m_Layer: 0
   m_Name: Floordemacations
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19322,7 +19322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1962132901
 RectTransform:
   m_ObjectHideFlags: 0
