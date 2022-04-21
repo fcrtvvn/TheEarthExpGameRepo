@@ -82,18 +82,6 @@ public class GridBuildingSystem : MonoBehaviour
             }
         }
 
-        //else if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    if (temp.CanBePlaced())
-        //    {
-        //        temp.Place();
-        //    }
-        //}
-        //else if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    ClearArea();
-        //    Destroy(temp.gameObject);
-        //}
     }
 
     #endregion
