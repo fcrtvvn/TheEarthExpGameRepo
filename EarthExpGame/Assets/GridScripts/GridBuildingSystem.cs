@@ -12,9 +12,7 @@ public class GridBuildingSystem : MonoBehaviour
     public Tilemap MainTilemap;
     public Tilemap TempTilemap;
 
-    //private Vector2 touchPosition;
-    //private RaycastHit hit;
-    //[SerializeField] private LayerMask layerMask;
+    private Vector2 touchPosition;
 
     public static Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
 
@@ -64,33 +62,33 @@ public class GridBuildingSystem : MonoBehaviour
                         temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
                             + new Vector3(.5f, .5f, 0f));
                         prevPos = cellPos;
-                        //                FollowBuilding();
+                        FollowBuilding();
                     }
                 }
             }
 
-            //    else if (Input.GetTouch(i).phase == TouchPhase.Began)
-            //    {
-            //        if (temp.CanBePlaced())
-            //        {
-            //            temp.Place();
-            //        }
-            //    }
+            else if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                if (temp.CanBePlaced())
+                {
+                    temp.Place();
+                }
+            }
 
-            //    else if (Input.GetTouch(i).phase == TouchPhase.Ended)
-            //    {
-            //        ClearArea();
-            //        Destroy(temp.gameObject);
-            //    }
-            //}
-
+            else if (Input.GetTouch(i).phase == TouchPhase.Ended)
+            {
+                ClearArea();
+                Destroy(temp.gameObject);
+            }
         }
 
-            #endregion
+    }
 
-            #region Tilemap Management
+    #endregion
 
-            private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
+    #region Tilemap Management
+
+    private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
     {
         TileBase[] array = new TileBase[area.size.x * area.size.y * area.size.z];
         int counter = 0;
@@ -127,74 +125,64 @@ public class GridBuildingSystem : MonoBehaviour
     public void InitializeWithBuilding(GameObject building)
     {
         temp = Instantiate(building, Vector3.zero, Quaternion.identity).GetComponent<Building>();
-        //FollowBuilding();
+        FollowBuilding();
     }
 
-    //private void FixedUpdate()
-    //{
-    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    private void ClearArea()
+    {
+        TileBase[] toClear = new TileBase[prevArea.size.x * prevArea.size.y * prevArea.size.z];
+        FillTiles(toClear, TileType.Empty);
+        TempTilemap.SetTilesBlock(prevArea, toClear);
+    }
 
-    //    if (Physics.Raycast(ray, out hit, 1000, layerMask))
-    //    {
-    //        prevPos = hit.point;
-    //    }
-    //}
+    private void FollowBuilding()
+    {
+        ClearArea();
 
-    //private void ClearArea()
-    //{
-    //    TileBase[] toClear = new TileBase[prevArea.size.x * prevArea.size.y * prevArea.size.z];
-    //    FillTiles(toClear, TileType.Empty);
-    //    TempTilemap.SetTilesBlock(prevArea, toClear);
-    //}
+        temp.area.position = gridLayout.WorldToCell(temp.gameObject.transform.position);
+        BoundsInt buildingArea = temp.area;
 
-    //private void FollowBuilding()
-    //{
-    //    ClearArea();
+        TileBase[] baseArray = GetTilesBlock(buildingArea, MainTilemap);
 
-    //    temp.area.position = gridLayout.WorldToCell(temp.gameObject.transform.position);
-    //    BoundsInt buildingArea = temp.area;
+        int size = baseArray.Length;
+        TileBase[] tileArray = new TileBase[size];
 
-    //    TileBase[] baseArray = GetTilesBlock(buildingArea, MainTilemap);
+        for (int i = 0; i < baseArray.Length; i++)
+        {
+            if (baseArray[i] == tileBases[TileType.White])
+            {
+                tileArray[i] = tileBases[TileType.Green];
+            }
+            else
+            {
+                FillTiles(tileArray, TileType.Red);
+                break;
+            }
+        }
 
-    //    int size = baseArray.Length;
-    //    TileBase[] tileArray = new TileBase[size];
+        TempTilemap.SetTilesBlock(buildingArea, tileArray);
+        prevArea = buildingArea;
+    }
 
-    //    for (int i = 0; i < baseArray.Length; i++)
-    //    {
-    //        if (baseArray[i] == tileBases[TileType.White])
-    //        {
-    //            tileArray[i] = tileBases[TileType.Green];
-    //        }
-    //        else
-    //        {
-    //            FillTiles(tileArray, TileType.Red);
-    //            break;
-    //        }
-    //    }
+    public bool CanTakeArea(BoundsInt area)
+    {
+        TileBase[] baseArray = GetTilesBlock(area, MainTilemap);
+        foreach (var b in baseArray)
+        {
+            if (b != tileBases[TileType.White])
+            {
+                Debug.Log("Cannot place here");
+                return false;
+            }
+        }
+        return true;
+    }
 
-    //    TempTilemap.SetTilesBlock(buildingArea, tileArray);
-    //    prevArea = buildingArea;
-    //}
-
-    //public bool CanTakeArea(BoundsInt area)
-    //{
-    //    TileBase[] baseArray = GetTilesBlock(area, MainTilemap);
-    //    foreach (var b in baseArray)
-    //    {
-    //        if (b != tileBases[TileType.White])
-    //        {
-    //            Debug.Log("Cannot place here");
-    //            return false;
-    //        }
-    //    }
-    //    return true;
-    //}
-
-    //public void TakeArea(BoundsInt area)
-    //{
-    //    SetTilesBlock(area, TileType.Empty, TempTilemap);
-    //    SetTilesBlock(area, TileType.Green, MainTilemap);
-    //}
+    public void TakeArea(BoundsInt area)
+    {
+        SetTilesBlock(area, TileType.Empty, TempTilemap);
+        SetTilesBlock(area, TileType.Green, MainTilemap);
+    }
 
     #endregion
 
