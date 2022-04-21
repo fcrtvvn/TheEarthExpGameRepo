@@ -26,8 +26,6 @@ public class BuildingManager : MonoBehaviour
         {
             pendingObject.transform.position = pos;
 
-
-
             if (Input.touchCount > 0 && canPlace)
             {
                 Touch touch = Input.GetTouch(0);
