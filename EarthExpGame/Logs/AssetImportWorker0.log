@@ -1212,3 +1212,27 @@ Total: 10.097600 ms (FindLiveObjects: 0.611484 ms CreateObjectMapping: 0.136859 
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 8466.402879 seconds.
+  path: Assets/Scripts/BuildingManager.cs
+  artifactKey: Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BuildingManager.cs using Guid(db8e7f41938fd46cf802e17ab0973a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a176090128a89f5571748e2072af17') in 0.658120 seconds
+  Import took 1.311431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.760940 seconds.
+  path: Assets/Scripts/AdManager.cs
+  artifactKey: Guid(38a4cd0eb71e545f7bbe5c19e40186c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AdManager.cs using Guid(38a4cd0eb71e545f7bbe5c19e40186c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb08e45f23e490f39d96a5dd570128ce') in 0.004306 seconds
+  Import took 0.010186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.473038 seconds.
+  path: Assets/Scripts/AdManager.cs
+  artifactKey: Guid(38a4cd0eb71e545f7bbe5c19e40186c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AdManager.cs using Guid(38a4cd0eb71e545f7bbe5c19e40186c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58da572fce79a196ea65bd828c84ff10') in 0.028436 seconds
+  Import took 0.081385 seconds .
+
