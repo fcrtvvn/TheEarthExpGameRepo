@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildingManager : MonoBehaviour
 {
@@ -12,44 +13,45 @@ public class BuildingManager : MonoBehaviour
     private RaycastHit hit;
     [SerializeField] private LayerMask layerMask;
 
-    private Touch touch;
     private float rotateAmount = 45;
     private Quaternion rotationY;
-    //private Vector2 touchPosition;
 
     public float gridSize;
     public bool canPlace = true;
 
     void Update()
     {
-        //var touchCount = Input.touchCount;
-        //if (Input.touchCount > 0)
-        //{
-        //    touch = Input.GetTouch(0);
-
-        //    if (touch.phase == TouchPhase.Moved)
-        //    {
-        //        rotationY = Quaternion.Euler(
-        //            0f,
-        //            -touch.deltaPosition.x * rotateAmount,
-        //            0f);
-        //        transform.rotation = rotationY * transform.rotation;
-        //    }
-        //}
-
+        
         if (pendingObject != null)
         {
             pendingObject.transform.position = pos;
 
-            if (Input.GetMouseButtonDown(0) && canPlace)
+            if (Input.touchCount > 0 && canPlace)
             {
-                PlaceObject();
+                Touch touch = Input.GetTouch(0);
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        PlaceObject();
+                        break;
+                    case TouchPhase.Moved:
+
+                        break;
+                    case TouchPhase.Ended:
+
+                        break;
+                }
             }
 
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                RotateObject();
-            }
+            //if (Input.GetMouseButtonDown(0) && canPlace)
+            //{
+            //    PlaceObject();
+            //}
+
+            //if (Input.GetKeyDown(KeyCode.R))
+            //{
+            //    RotateObject();
+            //}
         }
     }
 
@@ -76,7 +78,6 @@ public class BuildingManager : MonoBehaviour
     public void SelectObject(int index)
     {
         pendingObject = Instantiate(objects[index], pos, transform.rotation);
-
     }
 
     float RoundToNearestGrid(float pos)
