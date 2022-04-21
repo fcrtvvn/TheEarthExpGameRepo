@@ -21,7 +21,7 @@ public class BuildingManager : MonoBehaviour
 
     void Update()
     {
-        
+
         if (pendingObject != null)
         {
             pendingObject.transform.position = pos;
@@ -55,7 +55,7 @@ public class BuildingManager : MonoBehaviour
         }
     }
 
-    public void PlaceObject ()
+    public void PlaceObject()
     {
         pendingObject = null;
     }
