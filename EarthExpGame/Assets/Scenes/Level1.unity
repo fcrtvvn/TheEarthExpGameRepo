@@ -2508,7 +2508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00001335144, y: -101}
+  m_AnchoredPosition: {x: -0.00001335144, y: -71}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &244026425
@@ -6610,18 +6610,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 369237142}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 953557833}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -7948,7 +7936,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 7699593367547257203}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -9719,7 +9707,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 6055631413320867251}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
@@ -11488,7 +11476,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 2870044944309479697}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
@@ -19478,14 +19466,13 @@ GameObject:
   - component: {fileID: 1962132901}
   - component: {fileID: 1962132903}
   - component: {fileID: 1962132902}
-  - component: {fileID: 1962132904}
   m_Layer: 5
   m_Name: buyorwatchadpanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1962132901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19547,18 +19534,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962132900}
   m_CullTransparentMesh: 1
---- !u!114 &1962132904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962132900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38a4cd0eb71e545f7bbe5c19e40186c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1964334559
 GameObject:
   m_ObjectHideFlags: 0
@@ -21709,6 +21684,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &2480378975847209338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6750079246811955083, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2870044944309479697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6347111661521260512, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4137971854986843267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5092460382560203378, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4237189109106153096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21758,7 +21748,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 2480378975847209338}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
@@ -22142,7 +22132,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 6415179962266081253}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
@@ -22692,7 +22682,7 @@ MonoBehaviour:
         m_MethodName: InitializeWithBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 4137971854986843267}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
@@ -23098,6 +23088,21 @@ RectTransform:
   m_AnchoredPosition: {x: -38.5, y: 17.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6055631413320867251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3155024879730948930, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6415179962266081253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2793998585528381716, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7699593367547257203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520942999080896386, guid: 70c03c8c754504b4892bb316b2451fc7, type: 3}
+  m_PrefabInstance: {fileID: 9205650962269480689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9205650962269480689
 PrefabInstance:
   m_ObjectHideFlags: 0

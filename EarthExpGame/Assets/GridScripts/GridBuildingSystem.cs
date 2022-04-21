@@ -13,6 +13,8 @@ public class GridBuildingSystem : MonoBehaviour
     public Tilemap TempTilemap;
 
     //private Vector2 touchPosition;
+    //private RaycastHit hit;
+    //[SerializeField] private LayerMask layerMask;
 
     public static Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
 
@@ -38,57 +40,57 @@ public class GridBuildingSystem : MonoBehaviour
 
     private void Update()
     {
-        //for (int i = 0; i < Input.touchCount; ++i)
-        //{
-        //    if (!temp)
-        //    {
-        //        return;
-        //    }
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (!temp)
+            {
+                return;
+            }
 
-        //    if (Input.GetMouseButtonDown(0))
-        //    {
-        //        if (EventSystem.current.IsPointerOverGameObject(0))
-        //        {
-        //            return;
-        //        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (EventSystem.current.IsPointerOverGameObject(0))
+                {
+                    return;
+                }
 
-        //        if (!temp.Placed)
-        //        {
-        //            Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //            Vector3Int cellPos = gridLayout.LocalToCell(touchPos);
+                if (!temp.Placed)
+                {
+                    Vector2 touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3Int cellPos = gridLayout.LocalToCell(touchPos);
 
-        //            if (prevPos != cellPos)
-        //            {
-        //                temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
-        //                    + new Vector3(.5f, .5f, 0f));
-        //                prevPos = cellPos;
-        //                FollowBuilding();
-        //            }
-        //        }
-        //    }
+                    if (prevPos != cellPos)
+                    {
+                        temp.transform.localPosition = gridLayout.CellToLocalInterpolated(cellPos
+                            + new Vector3(.5f, .5f, 0f));
+                        prevPos = cellPos;
+                        //                FollowBuilding();
+                    }
+                }
+            }
 
-        //    else if (Input.GetTouch(i).phase == TouchPhase.Began)
-        //    {
-        //        if (temp.CanBePlaced())
-        //        {
-        //            temp.Place();
-        //        }
-        //    }
+            //    else if (Input.GetTouch(i).phase == TouchPhase.Began)
+            //    {
+            //        if (temp.CanBePlaced())
+            //        {
+            //            temp.Place();
+            //        }
+            //    }
 
-        //    else if (Input.GetTouch(i).phase == TouchPhase.Ended)
-        //    {
-        //        ClearArea();
-        //        Destroy(temp.gameObject);
-        //    }
-        //}
+            //    else if (Input.GetTouch(i).phase == TouchPhase.Ended)
+            //    {
+            //        ClearArea();
+            //        Destroy(temp.gameObject);
+            //    }
+            //}
 
-    }
+        }
 
-    #endregion
+            #endregion
 
-    #region Tilemap Management
+            #region Tilemap Management
 
-    private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
+            private static TileBase[] GetTilesBlock(BoundsInt area, Tilemap tilemap)
     {
         TileBase[] array = new TileBase[area.size.x * area.size.y * area.size.z];
         int counter = 0;
@@ -127,6 +129,16 @@ public class GridBuildingSystem : MonoBehaviour
         temp = Instantiate(building, Vector3.zero, Quaternion.identity).GetComponent<Building>();
         //FollowBuilding();
     }
+
+    //private void FixedUpdate()
+    //{
+    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+    //    if (Physics.Raycast(ray, out hit, 1000, layerMask))
+    //    {
+    //        prevPos = hit.point;
+    //    }
+    //}
 
     //private void ClearArea()
     //{

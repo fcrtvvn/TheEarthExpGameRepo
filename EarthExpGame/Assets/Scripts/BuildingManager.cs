@@ -22,20 +22,20 @@ public class BuildingManager : MonoBehaviour
 
     void Update()
     {
-        var touchCount = Input.touchCount;
-        if (Input.touchCount > 0)
-        {
-            touch = Input.GetTouch(0);
+        //var touchCount = Input.touchCount;
+        //if (Input.touchCount > 0)
+        //{
+        //    touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Moved)
-            {
-                rotationY = Quaternion.Euler(
-                    0f,
-                    -touch.deltaPosition.x * rotateAmount,
-                    0f);
-                transform.rotation = rotationY * transform.rotation;
-            }
-        }
+        //    if (touch.phase == TouchPhase.Moved)
+        //    {
+        //        rotationY = Quaternion.Euler(
+        //            0f,
+        //            -touch.deltaPosition.x * rotateAmount,
+        //            0f);
+        //        transform.rotation = rotationY * transform.rotation;
+        //    }
+        //}
 
         if (pendingObject != null)
         {
