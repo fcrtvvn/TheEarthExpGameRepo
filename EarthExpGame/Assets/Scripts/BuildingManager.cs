@@ -43,15 +43,6 @@ public class BuildingManager : MonoBehaviour
                 }
             }
 
-            //if (Input.GetMouseButtonDown(0) && canPlace)
-            //{
-            //    PlaceObject();
-            //}
-
-            //if (Input.GetKeyDown(KeyCode.R))
-            //{
-            //    RotateObject();
-            //}
         }
     }
 
