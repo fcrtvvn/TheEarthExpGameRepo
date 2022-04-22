@@ -11,6 +11,6 @@ public class SeedsButtonInfo : MonoBehaviour
 
     void Update()
     {
-        SeedCostTxt.text = BuildingShop.GetComponent<SeedsManager>().Seeds[2, ItemID].ToString();
+        //SeedCostTxt.text = BuildingShop.GetComponent<SeedsManager>().Seeds[2, ItemID].ToString();
     }
 }

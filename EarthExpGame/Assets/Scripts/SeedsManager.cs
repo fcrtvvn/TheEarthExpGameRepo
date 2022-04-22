@@ -41,13 +41,14 @@ public class SeedsManager : MonoBehaviour
     }
 
 
-    public void Buy()
+    public void UseSeeds()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
         if (seeds >= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
             seeds -= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            Seeds[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] ++;
             SeedsTXT.text = seeds.ToString();
         }
     }
