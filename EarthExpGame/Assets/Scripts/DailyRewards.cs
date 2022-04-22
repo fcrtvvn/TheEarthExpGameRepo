@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,11 @@ namespace DailyRewardSystem
     public enum RewardType
     {
         Seeds
+    }
+    [Serializable] public struct Reward
+    {
+        public RewardType Type;
+        public int Amount;
     }
 
     public class DailyRewards : MonoBehaviour
