@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class BuildingShop : MonoBehaviour
 {
-    public int[,] shopBuildings = new int[8,8];
+    public int[,] shopBuildings = new int[8, 8];
     public float trees;
     public Text TreeTXT;
     public float water;
@@ -61,7 +61,4 @@ public class BuildingShop : MonoBehaviour
 
 
     }
-
-
-
 }
