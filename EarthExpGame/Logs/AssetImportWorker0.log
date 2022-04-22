@@ -436,3 +436,25 @@ Total: 23.097682 ms (FindLiveObjects: 0.547028 ms CreateObjectMapping: 0.272710 
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 64.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.2 MB.
+System memory in use after: 154.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 70.411200 ms (FindLiveObjects: 0.777801 ms CreateObjectMapping: 0.126133 ms MarkObjects: 69.416219 ms  DeleteObjects: 0.088260 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 37.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.5 MB.
+System memory in use after: 154.6 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 42.589956 ms (FindLiveObjects: 0.906100 ms CreateObjectMapping: 0.060048 ms MarkObjects: 41.281567 ms  DeleteObjects: 0.338637 ms)
+
