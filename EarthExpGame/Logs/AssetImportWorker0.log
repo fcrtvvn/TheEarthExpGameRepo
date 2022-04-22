@@ -302,3 +302,91 @@ Received Import Request.
 Start importing Assets/Textures, Objects/ADG_Textures/Demo using Guid(9c09176f032ecf146a1803fdfbeb1c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25adf530a791deaec5c3635c35872bde') in 0.083921 seconds
   Import took 0.130536 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1112.162420 seconds.
+  path: Assets/TheXPLogo.jpeg
+  artifactKey: Guid(4ff65b9f7c429435ca44b889db9c1d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TheXPLogo.jpeg using Guid(4ff65b9f7c429435ca44b889db9c1d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de4c54b18880aae669eafd06fdd197c') in 2.700564 seconds
+  Import took 2.725343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.534088 seconds.
+  path: Assets/TheXPLogo.jpeg
+  artifactKey: Guid(4ff65b9f7c429435ca44b889db9c1d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TheXPLogo.jpeg using Guid(4ff65b9f7c429435ca44b889db9c1d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2687fdb596b3db32a9550b5622dea1') in 0.249915 seconds
+  Import took 0.256082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 276.227097 seconds.
+  path: Assets/biggerlogo.png
+  artifactKey: Guid(750e7d6d80d974c8da452929f7ba5b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/biggerlogo.png using Guid(750e7d6d80d974c8da452929f7ba5b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69c0b5583ba9c1e0064ebbbac9604e6') in 1.345205 seconds
+  Import took 1.396539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.343425 seconds.
+  path: Assets/biggerlogo.png
+  artifactKey: Guid(750e7d6d80d974c8da452929f7ba5b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/biggerlogo.png using Guid(750e7d6d80d974c8da452929f7ba5b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a7782d6f41064e5220680ae6b08cd2') in 0.073291 seconds
+  Import took 0.079932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.400365 seconds.
+  path: Assets/removedlogo.png
+  artifactKey: Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/removedlogo.png using Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735c988d7ffb691e27c395d27f47270b') in 0.035166 seconds
+  Import took 0.040337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.119991 seconds.
+  path: Assets/removedlogo.png
+  artifactKey: Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/removedlogo.png using Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735c988d7ffb691e27c395d27f47270b') in 0.035131 seconds
+  Import took 0.043688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.310856 seconds.
+  path: Assets/removedlogo.png
+  artifactKey: Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/removedlogo.png using Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e424b65ddfb0adcf8084bc2b1757b94a') in 0.045180 seconds
+  Import took 0.048961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015295 seconds.
+  path: Assets/removedlogo.png
+  artifactKey: Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/removedlogo.png using Guid(af13cf3543407453f9b010fb65e524d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e424b65ddfb0adcf8084bc2b1757b94a') in 0.036683 seconds
+  Import took 0.042795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 201.115587 seconds.
+  path: Assets/xpremove.png
+  artifactKey: Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/xpremove.png using Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8117c9c40d50b9288408a8dcd179ab6c') in 0.088654 seconds
+  Import took 0.145885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.845245 seconds.
+  path: Assets/xpremove.png
+  artifactKey: Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/xpremove.png using Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f5141175fb1a29d1579f396d7ab158') in 0.055418 seconds
+  Import took 0.061726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010301 seconds.
+  path: Assets/xpremove.png
+  artifactKey: Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/xpremove.png using Guid(3f3a3995109d64c4a9b77a031241b905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f5141175fb1a29d1579f396d7ab158') in 0.060377 seconds
+  Import took 0.068426 seconds .
+
