@@ -526,6 +526,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1962132900}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &89916421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4512,7 +4524,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &514300886
 MonoBehaviour:
@@ -8076,7 +8088,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
@@ -8150,7 +8162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3054b28597fa84d43ba8974c1fe8cdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 0
+  ItemID: 1
   TreePriceTxt: {fileID: 2013619510}
   WaterPriceTxt: {fileID: 1288996754}
   BuildingShop: {fileID: 233364160}
@@ -8237,7 +8249,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 858679159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1101959803}
+        m_TargetAssemblyTypeName: AdsInitializer, Assembly-CSharp
+        m_MethodName: InitializeAds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &858679159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9677,7 +9701,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
@@ -9751,7 +9775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3054b28597fa84d43ba8974c1fe8cdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 1
+  ItemID: 2
   TreePriceTxt: {fileID: 1106531444}
   WaterPriceTxt: {fileID: 907802683}
   BuildingShop: {fileID: 233364160}
@@ -11364,7 +11388,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
@@ -18976,6 +19000,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 234852591}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1905827126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21969,7 +22005,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
@@ -22353,7 +22389,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
@@ -22903,7 +22939,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 233364162}
         m_TargetAssemblyTypeName: BuildingShop, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 1
