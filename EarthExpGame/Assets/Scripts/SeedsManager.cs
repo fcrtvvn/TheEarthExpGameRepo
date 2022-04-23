@@ -43,20 +43,20 @@ public class SeedsManager : MonoBehaviour
     }
 
 
-    public void Buy()
+    public void UseSeeds()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if (trees >= shopBuildings[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        if (seeds >= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
-            trees -= shopBuildings[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-            TreeTXT.text = trees.ToString();
+            seeds -= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            SeedsTXT.text = seeds.ToString();
         }
 
-        if (water >= shopBuildings[3, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        if (tree >= Seeds[3, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
-            water -= shopBuildings[3, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-            WaterTXT.text = water.ToString();
+            tree -= Seeds[3, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            TreeTXT.text = tree.ToString();
         }
 
 
