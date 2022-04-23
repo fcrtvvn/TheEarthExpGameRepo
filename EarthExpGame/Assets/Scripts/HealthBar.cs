@@ -6,22 +6,60 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
-    public Gradient gradient;
-    public Image fill;
 
-    public void SetMaxHealth (int health)
-	{
-        slider.maxValue = health;
-        slider.value = health;
+    public Material normalSky, redSky;
 
-        fill.color = gradient.Evaluate(1f);
-	}
+    public void BarValueSetter(float value, float waterAmountValue)
+    {
+        float lowCO2value = 1000;
 
-    public void SetHealth (int health)
-	{
-        slider.value = health;
+        float valueToSet = 0;
 
-        fill.color = gradient.Evaluate(slider.normalizedValue); 
-	}
+        if (value > lowCO2value)
+        {
+            valueToSet = 0;
+        }
 
+        if (value < 0)
+        {
+            valueToSet = 1000;
+        }
+        else
+        {
+            valueToSet = lowCO2value - value;
+        }
+
+        slider.value = valueToSet;
+
+        if (value <= 300f)
+        {
+            RenderSettings.skybox = redSky;
+            waterAmountValue = waterAmountValue / 3;
+        }
+        else
+        {
+            RenderSettings.skybox = normalSky;
+        }
+    }
+
+    private void Start()
+    {
+        BarValueSetter(-1000, 1000);
+    }
+
+    //   public void SetMaxHealth (int health)
+    //{
+    //       slider.maxValue = health;
+    //       slider.value = health;
+
+    //       fill.color = gradient.Evaluate(1f);
+    //}
+
+    //   public void SetHealth (int health)
+    //{
+    //       slider.value = health;
+
+    //       fill.color = gradient.Evaluate(slider.normalizedValue); 
+    //}
 }
+

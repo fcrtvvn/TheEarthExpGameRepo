@@ -12,7 +12,7 @@ public class SeedsButtonInfo : MonoBehaviour
 
     void Update()
     {
-        SeedCostTxt.text = BuildingShop.GetComponent<BuildingShop>().Seeds[2, ItemID].ToString();
-        TreeQuantityTxt.text = BuildingShop.GetComponent<BuildingShop>().Seeds[3, ItemID].ToString();
+        SeedCostTxt.text = SeedsManager.GetComponent<SeedsManager>().Seeds[2, ItemID].ToString();
+        TreeQuantityTxt.text = SeedsManager.GetComponent<SeedsManager>().Seeds[3, ItemID].ToString();
     }
 }
