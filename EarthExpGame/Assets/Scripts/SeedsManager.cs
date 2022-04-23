@@ -9,11 +9,13 @@ public class SeedsManager : MonoBehaviour
     public int[,] Seeds = new int[8, 8];
     public float seeds;
     public Text SeedsTXT;
+    public float tree;
+    public Text TreeTXT;
 
     void Start()
     {
         SeedsTXT.text = seeds.ToString();
-        
+        TreeTXT.text = tree.ToString();
 
         //IDs
         Seeds[1, 1] = 1;
@@ -32,25 +34,32 @@ public class SeedsManager : MonoBehaviour
         Seeds[2, 6] = 18;
 
         //Tree Quantity
-        Seeds[3, 1] = 0;
-        Seeds[3, 2] = 0;
-        Seeds[3, 3] = 0;
-        Seeds[3, 4] = 0;
-        Seeds[3, 5] = 0;
-        Seeds[3, 6] = 0;
+        Seeds[3, 1] = 9;
+        Seeds[3, 2] = 18;
+        Seeds[3, 3] = 24;
+        Seeds[3, 4] = 36;
+        Seeds[3, 5] = 45;
+        Seeds[3, 6] = 54;
     }
 
 
-    public void UseSeeds()
+    public void Buy()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if (seeds >= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        if (trees >= shopBuildings[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
-            seeds -= Seeds[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-            Seeds[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] ++;
-            SeedsTXT.text = seeds.ToString();
+            trees -= shopBuildings[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            TreeTXT.text = trees.ToString();
         }
+
+        if (water >= shopBuildings[3, ButtonRef.GetComponent<ButtonInfo>().ItemID])
+        {
+            water -= shopBuildings[3, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            WaterTXT.text = water.ToString();
+        }
+
+
     }
 }
 //9 18 27 36 45 63
