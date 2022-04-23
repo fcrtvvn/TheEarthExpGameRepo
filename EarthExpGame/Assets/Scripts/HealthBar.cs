@@ -42,10 +42,10 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        BarValueSetter(-1000, 1000);
-    }
+    //private void Start()
+    //{
+    //    BarValueSetter(-1000, 1000);
+    //}
 
     //   public void SetMaxHealth (int health)
     //{
