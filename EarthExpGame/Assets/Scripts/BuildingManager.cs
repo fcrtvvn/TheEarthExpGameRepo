@@ -84,9 +84,4 @@ public class BuildingManager : MonoBehaviour
         }
         return pos;
     }
-
-    //private void OnMouseDown()
-    //{
-    //    Destroy(gameObject);
-    //}
 }

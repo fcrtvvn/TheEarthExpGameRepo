@@ -957,7 +957,6 @@ GameObject:
   - component: {fileID: 141155627}
   - component: {fileID: 141155626}
   - component: {fileID: 141155625}
-  - component: {fileID: 141155628}
   m_Layer: 5
   m_Name: 18 seeds
   m_TagString: Untagged
@@ -1067,22 +1066,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141155623}
   m_CullTransparentMesh: 1
---- !u!114 &141155628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141155623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!4 &144637026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e399af9d66682f149b2b761a48e7d46e, type: 3}
@@ -1180,7 +1163,6 @@ GameObject:
   - component: {fileID: 185344498}
   - component: {fileID: 185344497}
   - component: {fileID: 185344496}
-  - component: {fileID: 185344499}
   m_Layer: 5
   m_Name: 15 seeds
   m_TagString: Untagged
@@ -1290,22 +1272,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185344494}
   m_CullTransparentMesh: 1
---- !u!114 &185344499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185344494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!1 &185679731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12556,8 +12522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1218156474}
-  normalSky: {fileID: 0}
-  redSky: {fileID: 0}
+  normalSky: {fileID: 2100000, guid: 1dfc2aa9d900889499587bd874c3da56, type: 2}
+  redSky: {fileID: 2100000, guid: a59fe87939f259d40a7ee37624c9568b, type: 2}
 --- !u!1 &1243151236
 GameObject:
   m_ObjectHideFlags: 0
@@ -14658,53 +14624,6 @@ RectTransform:
   m_AnchoredPosition: {x: -50.7, y: -81.9}
   m_SizeDelta: {x: 29.7363, y: 26.4794}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1429270556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1429270558}
-  - component: {fileID: 1429270557}
-  m_Layer: 0
-  m_Name: SeedsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1429270557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429270556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a28ff48aa1cb8413c9346f66117d9624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeds: 40
-  SeedsTXT: {fileID: 1420685601}
-  tree: 0
-  TreeTXT: {fileID: 0}
---- !u!4 &1429270558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429270556}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 642.4072, y: 358.06094, z: 0.0541687}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1431368955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e399af9d66682f149b2b761a48e7d46e, type: 3}
@@ -15002,7 +14921,6 @@ GameObject:
   - component: {fileID: 1566499385}
   - component: {fileID: 1566499384}
   - component: {fileID: 1566499383}
-  - component: {fileID: 1566499386}
   m_Layer: 5
   m_Name: 9 seeds
   m_TagString: Untagged
@@ -15112,22 +15030,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566499381}
   m_CullTransparentMesh: 1
---- !u!114 &1566499386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566499381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!1 &1580104935
 GameObject:
   m_ObjectHideFlags: 0
@@ -16929,7 +16831,6 @@ GameObject:
   - component: {fileID: 1670722105}
   - component: {fileID: 1670722104}
   - component: {fileID: 1670722103}
-  - component: {fileID: 1670722106}
   m_Layer: 5
   m_Name: 12 seeds
   m_TagString: Untagged
@@ -17039,22 +16940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670722101}
   m_CullTransparentMesh: 1
---- !u!114 &1670722106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670722101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!1 &1684358269
 GameObject:
   m_ObjectHideFlags: 0
@@ -17946,7 +17831,6 @@ GameObject:
   - component: {fileID: 1801665382}
   - component: {fileID: 1801665381}
   - component: {fileID: 1801665380}
-  - component: {fileID: 1801665383}
   m_Layer: 5
   m_Name: 6 seeds
   m_TagString: Untagged
@@ -18056,22 +17940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801665378}
   m_CullTransparentMesh: 1
---- !u!114 &1801665383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801665378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!1 &1821334227
 GameObject:
   m_ObjectHideFlags: 0
@@ -20525,7 +20393,6 @@ GameObject:
   - component: {fileID: 1990637554}
   - component: {fileID: 1990637553}
   - component: {fileID: 1990637552}
-  - component: {fileID: 1990637555}
   m_Layer: 5
   m_Name: 3 seeds
   m_TagString: Untagged
@@ -20635,22 +20502,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990637550}
   m_CullTransparentMesh: 1
---- !u!114 &1990637555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990637550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232ab722fee6d499eaae052483837dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemID: 0
-  SeedCostTxt: {fileID: 0}
-  TreeQuantityTxt: {fileID: 0}
-  SeedsManager: {fileID: 0}
 --- !u!1 &1998410965
 GameObject:
   m_ObjectHideFlags: 0
