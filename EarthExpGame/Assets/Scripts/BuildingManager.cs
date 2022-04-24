@@ -52,6 +52,10 @@ public class BuildingManager : MonoBehaviour
     public void PlaceObject()
     {
         pendingObject = null;
+        //if ()
+        //{
+        //    .interactable = true;
+        //}
     }
 
     public void RotateObject()

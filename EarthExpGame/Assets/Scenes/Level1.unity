@@ -969,7 +969,6 @@ GameObject:
   - component: {fileID: 141155627}
   - component: {fileID: 141155626}
   - component: {fileID: 141155625}
-  - component: {fileID: 141155628}
   m_Layer: 5
   m_Name: 18 seeds
   m_TagString: Untagged
@@ -1079,18 +1078,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141155623}
   m_CullTransparentMesh: 1
---- !u!114 &141155628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141155623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &144637026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e399af9d66682f149b2b761a48e7d46e, type: 3}
@@ -1188,7 +1175,6 @@ GameObject:
   - component: {fileID: 185344498}
   - component: {fileID: 185344497}
   - component: {fileID: 185344496}
-  - component: {fileID: 185344499}
   m_Layer: 5
   m_Name: 15 seeds
   m_TagString: Untagged
@@ -1298,18 +1284,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185344494}
   m_CullTransparentMesh: 1
---- !u!114 &185344499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185344494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &185679731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12391,6 +12365,7 @@ GameObject:
   - component: {fileID: 1208227351}
   - component: {fileID: 1208227350}
   - component: {fileID: 1208227349}
+  - component: {fileID: 1208227352}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -12462,7 +12437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1208227350}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1208227350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12501,6 +12488,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208227347}
   m_CullTransparentMesh: 1
+--- !u!114 &1208227352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208227347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 3
+  SeedCostTxt: {fileID: 1881477308}
+  SeedsShop: {fileID: 769570517}
 --- !u!1 &1210542783
 GameObject:
   m_ObjectHideFlags: 0
@@ -15327,7 +15329,6 @@ GameObject:
   - component: {fileID: 1566499385}
   - component: {fileID: 1566499384}
   - component: {fileID: 1566499383}
-  - component: {fileID: 1566499386}
   m_Layer: 5
   m_Name: 9 seeds
   m_TagString: Untagged
@@ -15437,18 +15438,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566499381}
   m_CullTransparentMesh: 1
---- !u!114 &1566499386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566499381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1580104935
 GameObject:
   m_ObjectHideFlags: 0
@@ -15729,6 +15718,7 @@ GameObject:
   - component: {fileID: 1591705035}
   - component: {fileID: 1591705034}
   - component: {fileID: 1591705033}
+  - component: {fileID: 1591705036}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -15800,7 +15790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1591705034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1591705034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15839,6 +15841,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591705031}
   m_CullTransparentMesh: 1
+--- !u!114 &1591705036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591705031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 4
+  SeedCostTxt: {fileID: 850524926}
+  SeedsShop: {fileID: 769570517}
 --- !u!1001 &1592299462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16834,6 +16851,7 @@ GameObject:
   - component: {fileID: 1647342702}
   - component: {fileID: 1647342701}
   - component: {fileID: 1647342700}
+  - component: {fileID: 1647342703}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -16905,7 +16923,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1647342701}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1647342701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16944,6 +16974,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647342698}
   m_CullTransparentMesh: 1
+--- !u!114 &1647342703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647342698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 2
+  SeedCostTxt: {fileID: 1210542785}
+  SeedsShop: {fileID: 769570517}
 --- !u!1 &1653525030
 GameObject:
   m_ObjectHideFlags: 0
@@ -17252,7 +17297,6 @@ GameObject:
   - component: {fileID: 1670722105}
   - component: {fileID: 1670722104}
   - component: {fileID: 1670722103}
-  - component: {fileID: 1670722106}
   m_Layer: 5
   m_Name: 12 seeds
   m_TagString: Untagged
@@ -17362,18 +17406,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670722101}
   m_CullTransparentMesh: 1
---- !u!114 &1670722106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670722101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1684358269
 GameObject:
   m_ObjectHideFlags: 0
@@ -17658,6 +17690,7 @@ GameObject:
   - component: {fileID: 1704276822}
   - component: {fileID: 1704276821}
   - component: {fileID: 1704276820}
+  - component: {fileID: 1704276823}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -17729,7 +17762,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1704276821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1704276821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17768,6 +17813,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704276818}
   m_CullTransparentMesh: 1
+--- !u!114 &1704276823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704276818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 1
+  SeedCostTxt: {fileID: 1350167635}
+  SeedsShop: {fileID: 769570517}
 --- !u!1 &1713917552
 GameObject:
   m_ObjectHideFlags: 0
@@ -18345,7 +18405,6 @@ GameObject:
   - component: {fileID: 1801665382}
   - component: {fileID: 1801665381}
   - component: {fileID: 1801665380}
-  - component: {fileID: 1801665383}
   m_Layer: 5
   m_Name: 6 seeds
   m_TagString: Untagged
@@ -18455,18 +18514,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801665378}
   m_CullTransparentMesh: 1
---- !u!114 &1801665383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801665378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1821334227
 GameObject:
   m_ObjectHideFlags: 0
@@ -18786,6 +18833,7 @@ GameObject:
   - component: {fileID: 1859415293}
   - component: {fileID: 1859415292}
   - component: {fileID: 1859415291}
+  - component: {fileID: 1859415294}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -18857,7 +18905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1859415292}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1859415292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18896,6 +18956,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859415289}
   m_CullTransparentMesh: 1
+--- !u!114 &1859415294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859415289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 5
+  SeedCostTxt: {fileID: 344295456}
+  SeedsShop: {fileID: 769570517}
 --- !u!1 &1873611246
 GameObject:
   m_ObjectHideFlags: 0
@@ -20248,7 +20323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -90.883}
+  m_AnchoredPosition: {x: 0, y: -75.501045}
   m_SizeDelta: {x: -34.807175, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943021083
@@ -21012,7 +21087,6 @@ GameObject:
   - component: {fileID: 1990637554}
   - component: {fileID: 1990637553}
   - component: {fileID: 1990637552}
-  - component: {fileID: 1990637555}
   m_Layer: 5
   m_Name: 3 seeds
   m_TagString: Untagged
@@ -21122,18 +21196,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990637550}
   m_CullTransparentMesh: 1
---- !u!114 &1990637555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990637550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1998410965
 GameObject:
   m_ObjectHideFlags: 0
@@ -22113,6 +22175,7 @@ GameObject:
   - component: {fileID: 2111062940}
   - component: {fileID: 2111062939}
   - component: {fileID: 2111062938}
+  - component: {fileID: 2111062941}
   m_Layer: 5
   m_Name: seed 1
   m_TagString: Untagged
@@ -22184,7 +22247,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2111062939}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 769570518}
+        m_TargetAssemblyTypeName: SeedsShop, Assembly-CSharp
+        m_MethodName: UseSeeds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2111062939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22223,6 +22298,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111062936}
   m_CullTransparentMesh: 1
+--- !u!114 &2111062941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111062936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf049fe9081ef4f3bb788e08cd9d2ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: 6
+  SeedCostTxt: {fileID: 1998410967}
+  SeedsShop: {fileID: 769570517}
 --- !u!1 &2127717871
 GameObject:
   m_ObjectHideFlags: 0

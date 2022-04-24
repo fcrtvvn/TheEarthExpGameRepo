@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SeedsButtonInfo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int ItemID;
+    public Text SeedCostTxt;
+    public GameObject SeedsShop;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        SeedCostTxt.text = SeedsShop.GetComponent<SeedsShop>().Seeds[2, ItemID].ToString();
     }
 }

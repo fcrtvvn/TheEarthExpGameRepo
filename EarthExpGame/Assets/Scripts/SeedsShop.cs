@@ -23,6 +23,23 @@ public class SeedsShop : MonoBehaviour
         Seeds[1, 6] = 6;
 
         //Seed Cost
+        Seeds[2, 1] = 3;
+        Seeds[2, 2] = 6;
+        Seeds[2, 3] = 9;
+        Seeds[2, 4] = 12;
+        Seeds[2, 5] = 15;
+        Seeds[2, 6] = 18;
+    }
+
+    public void UseSeeds()
+    {
+        GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+
+        if (seedcost >= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID])
+        {
+            seedcost -= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID];
+            SeedTXT.text = seedcost.ToString();
+        }
 
     }
 }
