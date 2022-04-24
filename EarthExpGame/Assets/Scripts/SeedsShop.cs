@@ -10,7 +10,8 @@ public class SeedsShop : MonoBehaviour
     public float seedcost;
     public Text SeedTXT;
 
-    BuildingShop buildingShop = BuildingShop.Find("TreeTXT");
+    public BuildingShop buildingShop;
+    //buildingShop.TreeTXT
 
     void Start()
     {
@@ -51,9 +52,9 @@ public class SeedsShop : MonoBehaviour
         if (seedcost >= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID])
         {
             seedcost -= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID];
-            Seeds[3, buildingShop.TreeTXT.ItemID] *= 3; 
+            //Seeds[3, buildingShop.TreeTXT.ItemID] *= 3;
             SeedTXT.text = seedcost.ToString();
-            buildingShop.TreeTXT = Seeds[3, buildingShop.TreeTXT.ItemID].ToString();
+            //buildingShop.TreeTXT = Seeds[3, buildingShop.TreeTXT.ItemID].ToString();
         }
         //else 
     }
