@@ -434,3 +434,34 @@ Total: 16.224343 ms (FindLiveObjects: 0.601850 ms CreateObjectMapping: 0.130416 
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 3634.698758 seconds.
+  path: Assets/Scripts/SeedsButtonInfo.cs
+  artifactKey: Guid(bf049fe9081ef4f3bb788e08cd9d2ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SeedsButtonInfo.cs using Guid(bf049fe9081ef4f3bb788e08cd9d2ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32718401601465121ea366261f8d197') in 0.344077 seconds
+  Import took 0.607097 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.544 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.0 MB.
+System memory in use after: 171.1 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 21.563428 ms (FindLiveObjects: 0.403261 ms CreateObjectMapping: 0.094066 ms MarkObjects: 20.953814 ms  DeleteObjects: 0.107788 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
