@@ -11,7 +11,7 @@ public class SeedsShop : MonoBehaviour
     public Text SeedTXT;
 
     BuildingShop buildingShop;
-    //buildingShop.TreeTXT = "Tree TXT";
+    buildingShop.TreeTXT = "Tree TXT";
 
     void Start()
     {
