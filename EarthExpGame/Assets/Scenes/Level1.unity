@@ -6319,7 +6319,6 @@ GameObject:
   - component: {fileID: 737127540}
   - component: {fileID: 737127542}
   - component: {fileID: 737127541}
-  - component: {fileID: 737127543}
   m_Layer: 5
   m_Name: seedspanel
   m_TagString: Untagged
@@ -6389,18 +6388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737127539}
   m_CullTransparentMesh: 1
---- !u!114 &737127543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737127539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a28ff48aa1cb8413c9346f66117d9624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &737400107
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,19 +47,15 @@ public class HealthBar : MonoBehaviour
     //    BarValueSetter(-1000, 1000);
     //}
 
-    //   public void SetMaxHealth (int health)
-    //{
-    //       slider.maxValue = health;
-    //       slider.value = health;
+    public void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health;
+    }
 
-    //       fill.color = gradient.Evaluate(1f);
-    //}
-
-    //   public void SetHealth (int health)
-    //{
-    //       slider.value = health;
-
-    //       fill.color = gradient.Evaluate(slider.normalizedValue); 
-    //}
+    public void SetHealth(int health)
+    {
+        slider.value = health;
+    }
 }
 
