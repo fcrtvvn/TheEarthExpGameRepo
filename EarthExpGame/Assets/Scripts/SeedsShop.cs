@@ -10,8 +10,7 @@ public class SeedsShop : MonoBehaviour
     public float seedcost;
     public Text SeedTXT;
 
-    BuildingShop buildingShop;
-    buildingShop.TreeTXT = "Tree TXT";
+    BuildingShop buildingShop = BuildingShop.Find("TreeTXT");
 
     void Start()
     {
