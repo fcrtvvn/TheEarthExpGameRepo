@@ -9,6 +9,17 @@ public class HealthBar : MonoBehaviour
 
     public Material normalSky, redSky;
 
+    public void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health;
+    }
+
+    public void SetHealth(int health)
+    {
+        slider.value = health;
+    }
+
     public void BarValueSetter(float value, float waterAmountValue)
     {
         float lowCO2value = 1000;
@@ -47,15 +58,5 @@ public class HealthBar : MonoBehaviour
     //    BarValueSetter(-1000, 1000);
     //}
 
-    public void SetMaxHealth(int health)
-    {
-        slider.maxValue = health;
-        slider.value = health;
-    }
-
-    public void SetHealth(int health)
-    {
-        slider.value = health;
-    }
 }
 

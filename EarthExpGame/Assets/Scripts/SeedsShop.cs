@@ -10,6 +10,7 @@ public class SeedsShop : MonoBehaviour
     public float seedcost;
     public Text SeedTXT;
 
+
     void Start()
     {
         SeedTXT.text = seedcost.ToString();
@@ -29,7 +30,18 @@ public class SeedsShop : MonoBehaviour
         Seeds[2, 4] = 12;
         Seeds[2, 5] = 15;
         Seeds[2, 6] = 18;
+
+        //Add Tree
+        Seeds[3, 1] = 9;
+        Seeds[3, 2] = 18;
+        Seeds[3, 3] = 27;
+        Seeds[3, 4] = 36;
+        Seeds[3, 5] = 45;
+        Seeds[3, 6] = 54;
     }
+
+    //IEnumerator PlantCoroutine()
+    //
 
     public void UseSeeds()
     {
@@ -39,7 +51,8 @@ public class SeedsShop : MonoBehaviour
         {
             seedcost -= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID];
             SeedTXT.text = seedcost.ToString();
+          
         }
-
+        //else 
     }
 }
