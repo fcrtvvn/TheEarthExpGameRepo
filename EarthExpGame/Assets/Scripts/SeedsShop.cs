@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class SeedsShop : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int[,] Seeds = new int[8, 8];
+    public float seedcost;
+    public Text SeedTXT;
+
     void Start()
     {
-        
-    }
+        SeedTXT.text = seedcost.ToString();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //IDs
+        Seeds[1, 1] = 1;
+        Seeds[1, 2] = 2;
+        Seeds[1, 3] = 3;
+        Seeds[1, 4] = 4;
+        Seeds[1, 5] = 5;
+        Seeds[1, 6] = 6;
+
+        //Seed Cost
+
     }
 }
