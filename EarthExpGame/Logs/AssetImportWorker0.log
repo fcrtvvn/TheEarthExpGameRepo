@@ -1,0 +1,353 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51750
+Successfully changed project path to: /Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame
+/Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 239.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame/Assets
+GfxDevice: creating device client; threaded=0
+2022-04-25 09:15:17.705 Unity[24836:2553553] Color LCD preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-04-25 09:15:17.705 Unity[24836:2553553] Metal devices available: 1
+2022-04-25 09:15:17.706 Unity[24836:2553553] 0: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-04-25 09:15:17.707 Unity[24836:2553553] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003962 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 82.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 15.179 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003884 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.281 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1636 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.1 MB.
+System memory in use after: 169.1 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2078.
+Total: 8.543834 ms (FindLiveObjects: 0.452660 ms CreateObjectMapping: 0.120473 ms MarkObjects: 7.843708 ms  DeleteObjects: 0.123023 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Textures, Objects/Brick_House/Textures/Brick_house_N.png
+  artifactKey: Guid(bf7215a89b253644a8ae3c2e65f52235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Brick_House/Textures/Brick_house_N.png using Guid(bf7215a89b253644a8ae3c2e65f52235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0d403caf9869142edae1ceb7f66728') in 1.732489 seconds
+  Import took 1.735451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001833 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png
+  artifactKey: Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png using Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783e55312c3316cf5ac0a7ffe05a081e') in 0.027822 seconds
+  Import took 0.031218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002822 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03_Sunless.png
+  artifactKey: Guid(6b057cc84b9df8440b171f96ff306279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03_Sunless.png using Guid(6b057cc84b9df8440b171f96ff306279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b981df246047e38ff205fbe9f8bbaa') in 0.397394 seconds
+  Import took 0.401843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002674 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03.png
+  artifactKey: Guid(24941804827e1524eb70477f7f68a111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03.png using Guid(24941804827e1524eb70477f7f68a111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e58dd85dc58d80adc5af11d6c5941d6') in 0.071104 seconds
+  Import took 0.076340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002828 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02_Moonless.png
+  artifactKey: Guid(6b1d9786203d21246bc448213b0f9aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02_Moonless.png using Guid(6b1d9786203d21246bc448213b0f9aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5a03a5e2418e61e198dfca7e662463') in 0.065890 seconds
+  Import took 0.070158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap.cubemap
+  artifactKey: Guid(ebaa0716f467b2e46ad598de33148cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap.cubemap using Guid(ebaa0716f467b2e46ad598de33148cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8a903b665619ce9419c846d86629a7') in 1.548941 seconds
+  Import took 1.559863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap_down.png
+  artifactKey: Guid(20556ff95cea2fa44a44cd07980dae85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap_down.png using Guid(20556ff95cea2fa44a44cd07980dae85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997163196ca4fcdd543a7b283127fae9') in 0.031767 seconds
+  Import took 0.034791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003169 seconds.
+  path: Assets/Textures, Objects/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Tall/Conifer Tall [Albedo].png
+  artifactKey: Guid(d7ffe1fa944f34298b984303aca8ae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Tall/Conifer Tall [Albedo].png using Guid(d7ffe1fa944f34298b984303aca8ae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a75246b93de4cf440b247d08f89dfe5') in 0.045346 seconds
+  Import took 0.049077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_05.png
+  artifactKey: Guid(3b9c8413bb7d59b4dbd832a9122271cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_05.png using Guid(3b9c8413bb7d59b4dbd832a9122271cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7508de4e6d0b78fbb928f0082858eaa') in 0.052076 seconds
+  Import took 0.056220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000769 seconds.
+  path: Assets/Textures, Objects/Brick_House/Textures/brick_house_D.PNG
+  artifactKey: Guid(5a2ad4f8c5479114092527cba9f1420a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Brick_House/Textures/brick_house_D.PNG using Guid(5a2ad4f8c5479114092527cba9f1420a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254f50ac12a15b2fe2703ee3f15116b6') in 1.701415 seconds
+  Import took 1.706122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000697 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02.png
+  artifactKey: Guid(88c467166db994146961f1ecc5fc214e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02.png using Guid(88c467166db994146961f1ecc5fc214e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3629d90c639f13b66ba11006035f41a') in 0.090121 seconds
+  Import took 0.097453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007950 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_03_Moonless.png
+  artifactKey: Guid(72dbfaf2e11e92744a2ff15822b9079f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_03_Moonless.png using Guid(72dbfaf2e11e92744a2ff15822b9079f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4d21587b574349b914b54d943eca5f') in 0.085044 seconds
+  Import took 0.090790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001081 seconds.
+  path: Assets/Textures, Objects/Baker House/Textures/Barrel.tif
+  artifactKey: Guid(815c272c30618ea459bbe982311efd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Baker House/Textures/Barrel.tif using Guid(815c272c30618ea459bbe982311efd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eebcdbef5037106d834972ba6401db9') in 1.024186 seconds
+  Import took 1.030098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Textures, Objects/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Albedo].png
+  artifactKey: Guid(812b636c9bcef4b8aa194e3f6c9128e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Albedo].png using Guid(812b636c9bcef4b8aa194e3f6c9128e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6b023de4d0e32ebe2b82b233741aed') in 0.033802 seconds
+  Import took 0.036820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896945504a0ee885f5e5faa6770098c7') in 0.021194 seconds
+  Import took 0.024853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04_Sunless.png
+  artifactKey: Guid(0e981c5218a661d479182696be5f084f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04_Sunless.png using Guid(0e981c5218a661d479182696be5f084f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8714517baabf58a3307010e11ac237d') in 0.060738 seconds
+  Import took 0.065882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01_Sunless.png
+  artifactKey: Guid(d6a64d96999aec647a489f7d73c1a4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01_Sunless.png using Guid(d6a64d96999aec647a489f7d73c1a4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3be2298db61d2f0cab0ff42884a930d') in 0.071447 seconds
+  Import took 0.075577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_03.png
+  artifactKey: Guid(df8d1504e61fa6046bbb3b99bf96da1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_03.png using Guid(df8d1504e61fa6046bbb3b99bf96da1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c828c6b91834f7aa898b314cb6fea099') in 0.051484 seconds
+  Import took 0.055976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000967 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg
+  artifactKey: Guid(1cdc5b506b1a4a33a53c30669ced1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg using Guid(1cdc5b506b1a4a33a53c30669ced1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aac8d84057691b27afcf5fbfc9d0294') in 1.094749 seconds
+  Import took 1.100572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_01.png
+  artifactKey: Guid(a64d2362d418d194f91274685fb10faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_01.png using Guid(a64d2362d418d194f91274685fb10faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212004731e7101a1cb8807f06a8116ac') in 0.061914 seconds
+  Import took 0.066472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012207 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_01_Moonless.png
+  artifactKey: Guid(ac8a32e5107b67a47939926c52798a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_01_Moonless.png using Guid(ac8a32e5107b67a47939926c52798a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9072b479cdf64ad165df8d55fd1717') in 0.073836 seconds
+  Import took 0.078433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg
+  artifactKey: Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg using Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e488438656fc5f67b7d2036e0a40969') in 0.019673 seconds
+  Import took 0.024552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02_Sunless.png
+  artifactKey: Guid(a12ea62fd952d57439f49b6287da4762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02_Sunless.png using Guid(a12ea62fd952d57439f49b6287da4762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffbc92362c8729c563e24dd7c2cf349') in 0.072249 seconds
+  Import took 0.077694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Textures, Objects/Baker House/Textures/Baker_house.tif
+  artifactKey: Guid(87eda9aa615f5e246ba04794b538dc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Baker House/Textures/Baker_house.tif using Guid(87eda9aa615f5e246ba04794b538dc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22965530437cd63fc662913be9c3bd3') in 0.032154 seconds
+  Import took 0.036449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01.png
+  artifactKey: Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01.png using Guid(1331a26d2843a1148a23d5ddc81629dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4794051ec9be046c350147bed7b67af0') in 0.068276 seconds
+  Import took 0.073879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Textures, Objects/Brick_House/Textures/Brick_house_S.png
+  artifactKey: Guid(a2fb71c282b6e9643b7d0d21705e36cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Brick_House/Textures/Brick_house_S.png using Guid(a2fb71c282b6e9643b7d0d21705e36cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07cb368d23d5cb2942e1cb5a2ad7ad8d') in 0.083698 seconds
+  Import took 0.087608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003070 seconds.
+  path: Assets/Textures, Objects/20 Logos PSD/PSD/Pattern/Crazy.psd
+  artifactKey: Guid(ba60e6d96e4ecc44cad150a2e5a5d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/20 Logos PSD/PSD/Pattern/Crazy.psd using Guid(ba60e6d96e4ecc44cad150a2e5a5d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8453c810db3914182669520d148e49f') in 1.064495 seconds
+  Import took 1.072244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000652 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04.png
+  artifactKey: Guid(599e20092e3297247ad7ecc4ba9caf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04.png using Guid(599e20092e3297247ad7ecc4ba9caf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4adf947ef5824a7f240a3114d6e1bd') in 0.052302 seconds
+  Import took 0.055407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_05_Sunless.png
+  artifactKey: Guid(33762238fbd938c4c97707195d7e97e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_05_Sunless.png using Guid(33762238fbd938c4c97707195d7e97e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9e8b7d623cfe3716fd6c3041f3e4ef') in 0.062200 seconds
+  Import took 0.064885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_06.png
+  artifactKey: Guid(5dd1dab73acb80a4ca4a200b35ea95e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_06.png using Guid(5dd1dab73acb80a4ca4a200b35ea95e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae85fb78271e5aa433d5f32019b16835') in 0.061960 seconds
+  Import took 0.064868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_06_Sunless.png
+  artifactKey: Guid(5a80706490c0b9e458216d2d0bb6c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_06_Sunless.png using Guid(5a80706490c0b9e458216d2d0bb6c8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298f78f746f3af3f68c1708d6a49e96b') in 0.053386 seconds
+  Import took 0.056754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02.png
+  artifactKey: Guid(e60c8653c33d3da4d8f660c15214d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02.png using Guid(e60c8653c33d3da4d8f660c15214d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08d0d4163258a527b71bbd021836ee1a') in 0.069862 seconds
+  Import took 0.074428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap_back.png
+  artifactKey: Guid(ceb380b2cee94b64ca5f68c23e9cc957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Objects/Fantasy Skybox FREE/Cubemaps/FS002/Images/FS002_Day_Cubemap_back.png using Guid(ceb380b2cee94b64ca5f68c23e9cc957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f98bfe47fbbc0a5ad0e0f7a4073769') in 0.024996 seconds
+  Import took 0.028082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1059.396390 seconds.
+  path: Assets/Materials and Images/biggerlogo.png
+  artifactKey: Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials and Images/biggerlogo.png using Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889137e3ce4eea046f4e22fe6c56ebb9') in 0.135895 seconds
+  Import took 0.197434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.382588 seconds.
+  path: Assets/Materials and Images/biggerlogo.png
+  artifactKey: Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials and Images/biggerlogo.png using Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889137e3ce4eea046f4e22fe6c56ebb9') in 0.018555 seconds
+  Import took 0.031363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.244922 seconds.
+  path: Assets/Materials and Images/biggerlogo.png
+  artifactKey: Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials and Images/biggerlogo.png using Guid(25ce58696b8fa46a49fe54c6417346e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c555c80ef64745799dc78ec308ce9e') in 0.149617 seconds
+  Import took 0.163836 seconds .
+
