@@ -151,6 +151,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.EcoElixirs.TheXp
+    Standalone: com.EcoElixirs.TheXp
   buildNumber:
     Standalone: 0
     iPhone: 0

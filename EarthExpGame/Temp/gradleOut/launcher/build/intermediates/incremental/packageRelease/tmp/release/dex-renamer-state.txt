@@ -1,4 +1,0 @@
-#Mon Apr 25 15:31:33 WAT 2022
-base.0=/Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame/Temp/gradleOut/launcher/build/intermediates/dex/release/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
