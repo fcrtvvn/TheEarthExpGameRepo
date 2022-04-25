@@ -15,6 +15,7 @@ public class SeedsShop : MonoBehaviour
 
     void Start()
     {
+
         SeedTXT.text = seedcost.ToString();
 
         //IDs
@@ -51,11 +52,10 @@ public class SeedsShop : MonoBehaviour
 
         if (seedcost >= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID])
         {
+            //Seeds[3, buildingShop.GetComponent<SeedsButtonInfo>().ItemID] *= 3;
             seedcost -= Seeds[2, ButtonRef.GetComponent<SeedsButtonInfo>().ItemID];
-            //Seeds[3, buildingShop.TreeTXT.ItemID] *= 3;
             SeedTXT.text = seedcost.ToString();
-            //buildingShop.TreeTXT = Seeds[3, buildingShop.TreeTXT.ItemID].ToString();
+            //buildingShop.GetComponent<SeedsButtonInfo>().TreeTXT.text = Seeds[3, buildingShop.GetComponent<SeedsButtonInfo>().ItemID].ToString();
         }
-        //else 
     }
 }

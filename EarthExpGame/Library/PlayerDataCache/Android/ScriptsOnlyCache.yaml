@@ -1,13 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsInitializer
     - BuildingManager
     - BuildingShop
     - ButtonInfo
     - DailyRewardSystem.DailyRewards
     - HealthBar
     - MainMenu
-    - SeedsManager
+    - RewardedAdsButton
+    - SeedsButtonInfo
+    - SeedsShop
     - Settings
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
@@ -34,6 +37,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -84,53 +90,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1696}
+      Script: {instanceID: 1700}
     - Class: 114
-      Script: {instanceID: 1710}
+      Script: {instanceID: 1714}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 1936}
+      Script: {instanceID: 1886}
     - Class: 114
-      Script: {instanceID: 2078}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 2272}
+      Script: {instanceID: 2084}
     - Class: 114
-      Script: {instanceID: 2282}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2290}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2414}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 2586}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2712}
     - Class: 114
-      Script: {instanceID: 3040}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 3158}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3274}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3942}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 38864}
+      Script: {instanceID: 3892}
+    - Class: 114
+      Script: {instanceID: 3954}
+    - Class: 114
+      Script: {instanceID: 4084}
+    - Class: 114
+      Script: {instanceID: 4580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,33 +205,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1696}
-    - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1700}
     - Class: 114
       Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 2070}
+      Script: {instanceID: 1782}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2076}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2414}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2586}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 2998}
     - Class: 114
-      Script: {instanceID: 3956}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 4238}
+      Script: {instanceID: 3968}
+    - Class: 114
+      Script: {instanceID: 4252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -345,13 +357,19 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
+      Hash: 075b868be727bd5f579fd72d2e2cc3b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsInitializer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
     className: TMP_DigitValidator
   - hash:
       serializedVersion: 2
-      Hash: 4b8dff74c0603f3e6246514a412ffcba
+      Hash: 46444a54183553bdaec7678382eeeb21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthBar
@@ -379,6 +397,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 5c20d3006511c536ad29392cd89bd384
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RewardedAdsButton
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -507,6 +531,12 @@ ScriptsOnlyBuild:
     className: ButtonInfo
   - hash:
       serializedVersion: 2
+      Hash: 78470e0d5bc8fff860f9c8a33a850fb0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SeedsShop
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -589,12 +619,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark04
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SeedsManager
   - hash:
       serializedVersion: 2
       Hash: 0043dd2f8c778d9891e4ec79f4b610de
@@ -849,6 +873,12 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: 43286061bd8d2cf5184b3fc27dd6a8f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SeedsButtonInfo
+  - hash:
+      serializedVersion: 2
       Hash: 06fe0c6f1328047d1063ec79291e7f8a
     assemblyName: UnityEngine.Purchasing.Codeless.dll
     namespaceName: UnityEngine.Purchasing
@@ -951,6 +981,12 @@ ScriptsOnlyBuild:
     className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
+      Hash: 3aa2cb06274f451d0147937fca4dc4e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DailyRewardSystem
+    className: DailyRewards
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -991,14 +1027,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 3aa2cb06274f451d0147937fca4dc4e2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: DailyRewardSystem
-    className: DailyRewards
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: /Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame/ExportTheEx
+  playerPath: /Users/odysseyfoundation1/Desktop/Create with Code/TheEEGameRepo/EarthExpGame/TheXp.apk
