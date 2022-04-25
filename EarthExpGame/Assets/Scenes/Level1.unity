@@ -7240,7 +7240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seedcost: 40
   SeedTXT: {fileID: 1420685601}
-  selectBuilding: {fileID: 2111062938}
   buildingShop: {fileID: 233364162}
 --- !u!4 &769570519
 Transform:
